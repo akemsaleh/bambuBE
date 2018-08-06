@@ -21,7 +21,7 @@ const defaultPage = function(req,res){
    res.send("Bambulife BE Engineer Test");
 };
 
-app.use("/api",require("./api")(require(setting)));
+app.use("/api",require("./api")(setting));
 app.get("/",defaultPage);
 
 app.listen(setting.port,function(){
