@@ -6,6 +6,8 @@
 * Description : Initialize MongoDB Database to create collections and indexes
 *
 */
+"use strict";
+
 const MongoClient = require("mongodb").MongoClient;
 
 const setting = require("./config.json");
